@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techman.blog/sitemap.xml
