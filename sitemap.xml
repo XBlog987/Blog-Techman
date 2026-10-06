@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-06T20:34:22Z</lastmod>
+    <lastmod>2026-10-06T20:36:18Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,7 +22,11 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-06T20:34:08Z</lastmod>
+    <lastmod>2026-10-06T20:36:18Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/page/2/</loc>
+    <lastmod>2026-10-06T20:36:15Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -49,8 +53,48 @@
     <lastmod>2026-10-06T20:34:22Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/claude-cyber-verification-program-2026/</loc>
+    <lastmod>2026-10-06T20:36:15Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/claude-frontier-academy-ai-talent-2026/</loc>
+    <lastmod>2026-10-06T20:36:14Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/claude-opus-5-5-cost-guide/</loc>
+    <lastmod>2026-10-06T20:36:07Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/claude-sonnet-5-5-everyday-guide/</loc>
+    <lastmod>2026-10-06T20:36:06Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/deepseek-v4-1-flash-update-2026/</loc>
+    <lastmod>2026-10-06T20:36:11Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/gemini-4-argon-access-2026/</loc>
+    <lastmod>2026-10-06T20:36:05Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/gpt-5-5-retirement-october-2026/</loc>
+    <lastmod>2026-10-06T20:36:10Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/gpt-6-1-sol-codex-work-guide/</loc>
+    <lastmod>2026-10-06T20:36:09Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/mistral-large-4-preview-2026/</loc>
+    <lastmod>2026-10-06T20:36:03Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/problems/</loc>
     <lastmod>2026-10-06T20:34:22Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
+    <lastmod>2026-10-06T20:36:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/sac-cloud/</loc>
@@ -58,7 +102,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/shadowrocket/</loc>
-    <lastmod>2026-10-06T20:34:22Z</lastmod>
+    <lastmod>2026-10-06T20:36:18Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/tongbao/</loc>
