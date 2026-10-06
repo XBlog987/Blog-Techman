@@ -4,23 +4,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？ · 科技狂人</title>
-<meta name="description" content="Anthropic 于 10 月 6 日扩展网络安全验证计划，按防御、授权红队和专门场景分层开放。本文解释这一行业动态、普通用户的影响与权限和网络连接的区别。">
-<meta name="keywords" content="Claude网络安全,Cyber Verification Program,Anthropic最新动态,AI安全,Claude权限">
+<title>Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？ · 科技狂人</title>
+<meta name="description" content="Anthropic 在 10 月 6 日扩展 CVP，按防御、授权红队和专门场景开放能力。结合计划规则、前期 Glasswing 进展与数据治理说明，分析 AI 安全竞争为何从发现走向验证、修补和交付。">
+<meta name="keywords" content="Claude网络安全,Cyber Verification Program,AI安全,Project Glasswing,Anthropic最新动态">
 <meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://techman.blog/posts/claude-cyber-verification-program-2026/">
-<meta property="og:title" content="Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？">
-<meta property="og:description" content="Anthropic 于 10 月 6 日扩展网络安全验证计划，按防御、授权红队和专门场景分层开放。本文解释这一行业动态、普通用户的影响与权限和网络连接的区别。">
+<meta property="og:title" content="Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？">
+<meta property="og:description" content="Anthropic 在 10 月 6 日扩展 CVP，按防御、授权红队和专门场景开放能力。结合计划规则、前期 Glasswing 进展与数据治理说明，分析 AI 安全竞争为何从发现走向验证、修补和交付。">
 <meta property="og:url" content="https://techman.blog/posts/claude-cyber-verification-program-2026/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="科技狂人">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png"><meta property="og:image:alt" content="科技狂人">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？">
-<meta name="twitter:description" content="Anthropic 于 10 月 6 日扩展网络安全验证计划，按防御、授权红队和专门场景分层开放。本文解释这一行业动态、普通用户的影响与权限和网络连接的区别。">
+<meta name="twitter:title" content="Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？">
+<meta name="twitter:description" content="Anthropic 在 10 月 6 日扩展 CVP，按防御、授权红队和专门场景开放能力。结合计划规则、前期 Glasswing 进展与数据治理说明，分析 AI 安全竞争为何从发现走向验证、修补和交付。">
 <meta name="twitter:image" content="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png">
-<meta name="author" content="狂人哥"><meta property="article:published_time" content="2026-10-07T04:34:08&#43;08:00"><meta property="article:modified_time" content="2026-10-07T04:36:15&#43;08:00">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://techman.blog/posts/claude-cyber-verification-program-2026/#article","@type":"BlogPosting","author":{"@type":"Person","name":"狂人哥"},"dateModified":"2026-10-07T04:36:15+08:00","datePublished":"2026-10-07T04:34:08+08:00","description":"Anthropic 于 10 月 6 日扩展网络安全验证计划，按防御、授权红队和专门场景分层开放。本文解释这一行业动态、普通用户的影响与权限和网络连接的区别。","headline":"Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://techman.blog/posts/claude-cyber-verification-program-2026/","@type":"WebPage"},"url":"https://techman.blog/posts/claude-cyber-verification-program-2026/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://techman.blog/","name":"科技狂人","position":1},{"@type":"ListItem","item":"https://techman.blog/posts/claude-cyber-verification-program-2026/","name":"Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？","position":2}]}]}</script>
+<meta name="author" content="狂人哥"><meta property="article:published_time" content="2026-10-07T04:34:08&#43;08:00"><meta property="article:modified_time" content="2026-10-07T05:04:18&#43;08:00"><meta property="article:tag" content="Claude"><meta property="article:tag" content="AI智能体"><meta property="article:tag" content="AI安全">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://techman.blog/posts/claude-cyber-verification-program-2026/#article","@type":"BlogPosting","author":{"@type":"Person","name":"狂人哥"},"dateModified":"2026-10-07T05:04:18+08:00","datePublished":"2026-10-07T04:34:08+08:00","description":"Anthropic 在 10 月 6 日扩展 CVP，按防御、授权红队和专门场景开放能力。结合计划规则、前期 Glasswing 进展与数据治理说明，分析 AI 安全竞争为何从发现走向验证、修补和交付。","headline":"Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://techman.blog/posts/claude-cyber-verification-program-2026/","@type":"WebPage"},"url":"https://techman.blog/posts/claude-cyber-verification-program-2026/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://techman.blog/","name":"科技狂人","position":1},{"@type":"ListItem","item":"https://techman.blog/posts/claude-cyber-verification-program-2026/","name":"Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？","position":2}]}]}</script>
 
 <script>(()=>{let mode='system';try{const saved=localStorage.getItem('reader-theme');if(['system','light','dark'].includes(saved))mode=saved}catch{}const root=document.documentElement;root.dataset.colorMode=mode;root.classList.toggle('dark',mode==='dark'||(mode==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))})();</script>
 <link rel="stylesheet" href="https://techman.blog/assets/theme/style.css">
@@ -82,76 +82,46 @@
 <div class="page-viewport article-viewport"><div class="page-scroll article-scroll">
 <main id="main" tabindex="-1" class="shell article-shell" data-has-toc="true">
 
-<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://techman.blog/">科技狂人</a></li><li><span aria-current="page">Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？</span></li></ol></nav>
+<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://techman.blog/">科技狂人</a></li><li><span aria-current="page">Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？</span></li></ol></nav>
 
 
 
 <article data-pagefind-body>
 <header class="article-header">
 <div class="eyebrow" data-pagefind-ignore>文章</div>
-<h1 data-pagefind-meta="title">Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？</h1>
+<h1 data-pagefind-meta="title">Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？</h1>
 <div class="metadata" data-pagefind-ignore><span>狂人哥</span><time datetime="2026-10-07T04:34:08&#43;08:00">2026-10-07</time><span><span id="page-views">—</span> 次阅读</span></div>
 <div class="chips" data-pagefind-ignore><a href="https://techman.blog/categories/si/">SI&amp;AI资讯</a></div>
 </header>
-<div class="prose"><p>2026 年 10 月 6 日，Anthropic 宣布扩展 Cyber Verification Program，简称 CVP。它把网络安全相关能力按防御、红队和专门场景分层提供给符合条件的使用者。</p>
-<p><strong>这条新闻的重点是经过验证的分层开放，不是普通账号统一取消限制。</strong><a href="https://www.anthropic.com/news/cyber-verification-program">官方公告</a>说明，不同层级具有不同验证要求与安全控制。对关注 AI 行业的读者来说，这显示前沿能力的发布越来越需要配套权限设计。</p>
-<p><img src="https://techman.blog/assets/media/717cccb0-c357-41c3-aecd-c3a965077436.png" alt="Claude 网络安全验证计划：2026 年 10 月 6 日：分层开放能力"></p>
-<h2 id="heading">为什么这不只是一个企业功能更新？</h2>
-<p>网络安全工具既能帮助发现并修复问题，也可能被用于伤害系统。模型能力增长后，供应商需要决定哪些使用场景能够开放、由谁使用，以及怎样记录和处理误用。</p>
-<p>我们的分析是，AI 产品竞争正在增加一个维度：除了“能力做到什么程度”，还要回答“怎样把能力交给合适的人”。身份验证、组织责任和权限范围，开始更明显地影响用户能获得什么工具。</p>
-<p>这不等于所有 AI 产品都会采取同一制度，也不意味着权限制度本身已经解决全部风险。后续仍需要观察真实防御效果、误拦截反馈与治理成本。</p>
-<h2 id="heading-1">三个层级到底有什么区别？</h2>
-<table>
-<thead>
-<tr>
-<th>官方层级</th>
-<th>面向的主要工作</th>
-<th>阅读时要注意</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Defense Access</td>
-<td>防御、事件响应与漏洞分析等</td>
-<td>仍需符合资格与验证要求</td>
-</tr>
-<tr>
-<td>Red Team Access</td>
-<td>在防御基础上增加授权渗透测试</td>
-<td>当前面向组织，测试须获得授权</td>
-</tr>
-<tr>
-<td>Specialized Access</td>
-<td>特定高风险系统的专业测试</td>
-<td>仅限少数深入验证的组织</td>
-</tr>
-</tbody>
-</table>
-<p>这是一份帮助理解范围的简表，不是授权凭证。即使某个模型出现在计划里，也不代表你的普通账号可以直接使用相同配置。</p>
-<p>对站长和开发者来说，应先明确自己是做代码检查、修复已有问题，还是开展更复杂的测试，再核对官方规则与资格。</p>
-<h2 id="heading-2">普通用户与小型网站维护者会受什么影响？</h2>
-<p>官方说明，普通可用模型仍可以用于代码审查、修复已知问题、自有源码中的漏洞发现与告警整理等工作。对于个人博客维护者，这些具体任务通常比追求最少限制的权限层更实际。</p>
-<p>例如你可以让 AI 解释一条错误日志、整理需要升级的依赖，或辅助检查自有代码。但必须控制材料范围，避免把访问密钥、客户资料和不必要的隐私信息直接混入上下文。</p>
-<p>最终修改仍应由你检查。AI 解释得自信，不代表补丁一定正确；一个建议解决了当前报错，也可能改变其他行为。</p>
-<h2 id="ai-">为什么“AI 拒绝回答”不等于网络不好？</h2>
-<p>网络问题通常表现为连接失败、超时或页面无法加载；权限与安全规则可能表现为明确拒绝执行某类工作。两者需要不同的处理方式。</p>
-<p>不断更换线路不一定解决权限问题，购买所谓“无限制账号”也不能替代官方资格。先检查任务范围与产品规则，再判断是否属于误拦截或需要申请的场景。</p>
-<p>对于合法且属于自身权限的工作，保留请求说明、错误信息与材料范围，有助于向官方支持反馈。没有必要尝试用模糊描述掩盖实际任务。</p>
-<h2 id="heading-3">行业观察：能力开放与工程验证会一起发展</h2>
-<p>同一时期，Google 新旗舰也首先向受信任的网络防御者开放。将这些动态放在一起，我们可以观察到前沿模型发布正在更多地涉及分阶段接入与专业验证。</p>
-<p>这是方向性的分析，不是已经建立的跨厂商统一标准。不同公司如何定义可信用户、怎样处理数据和怎样衡量风险，仍可能有很大差异。</p>
-<p>对跟踪行业的人，值得继续关注的是三类后续信息：更多组织能否获得资格，误拦截能否减少，以及真正修复的问题是否经过验证。只报道“模型发现很多漏洞”，不足以说明最终安全效果。</p>
-<h2 id="heading-4">站长日常维护可以先做哪些事？</h2>
-<p>从备份、更新依赖、审查权限和整理日志开始。让 AI 帮忙解释问题与规划修改，再在自己的测试环境里验证。重要修改需要能够回退，尤其是涉及登录、发布或数据处理的部分。</p>
-<p>查阅海外安全公告和开发文档时，稳定连接有助于持续工作；需要比较线路可阅读<a href="/posts/best">站内网络服务选择参考</a>。它解决连接选择问题，不能改变 CVP 验证资格或第三方平台权限。</p>
-<h2 id="heading-5">常见问题</h2>
-<h3 id="claude-">Claude 普通账号的网络安全限制都取消了吗？</h3>
-<p>没有。此次是按资格与层级扩展的验证计划，不能这样概括。</p>
-<h3 id="heading-6">个人研究者可以获得所有层级吗？</h3>
-<p>不能。官方对不同层级有不同资格要求，红队层目前面向组织，专门层范围更有限。</p>
-<h3 id="-gemini-4-">这和 Gemini 4 的发布有什么关系？</h3>
-<p>它们是不同公司的不同安排，但都值得从前沿能力与分阶段开放的角度观察，不能混成一个计划。</p>
-<p>相关阅读：<a href="/posts/gemini-4-argon-access-2026">Gemini 4 Argon 为什么分阶段开放</a>。消息发布于 2026 年 10 月 6 日，本文核查于 2026 年 10 月 7 日。</p>
+<div class="prose"><p>AI 找到一处软件缺陷，并不是安全工作的结束。还要确认它是否真实、影响哪些用户、由谁修复，以及补丁是否已经部署。</p>
+<p>10 月 6 日，Anthropic 宣布扩展 Cyber Verification Program，简称 CVP，把相关能力按防御、红队与专门场景分层开放。<a href="https://www.anthropic.com/news/cyber-verification-program">官方公告</a>同时整合了此前的验证计划与 Glasswing 路线。</p>
+<p>表面上看，这是权限变化；放到近几个月的背景里，它也触及一个更现实的问题：当模型发现问题的速度加快，后面的验证和修补流程能不能跟上？</p>
+<h2 id="heading">三层权限，回答的是“谁在做什么工作”</h2>
+<p><img src="https://techman.blog/assets/media/e5f9970a-6e44-4df6-8890-fea51c94c28d.png" alt="Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？相关配图"></p>
+<p><em>图：Anthropic 官方 CVP 层级对照图截图。不同场景对应不同验证与安全要求，普通账号并非自动获得所有层级。</em></p>
+<p>Defense Access 面向防御与相关安全工作；Red Team Access 增加授权的对抗测试；Specialized Access 则面向少数经深入验证、涉及高风险系统的组织。</p>
+<p>名字看起来像套餐，实际上还有身份、使用范围和安全控制。<a href="https://support.claude.com/en/articles/14604842-cyber-verification-program">帮助中心</a>与<a href="https://support.claude.com/en/articles/17202708-cyber-verification-program-security-requirements">安全要求</a>是申请前需要核对的资料，而不是只看模型列表。</p>
+<p>本文不把审核通过当作任何第三方系统的测试授权。平台允许某类能力，与目标系统允许你开展测试，仍是不同层面。</p>
+<h2 id="heading-1">这条新闻的前半段发生在春夏</h2>
+<p>5 月的<a href="https://www.anthropic.com/research/glasswing-initial-update">Glasswing 初期进展</a>讨论了从发现漏洞走向验证、披露和修补的困难；6 月的<a href="https://www.anthropic.com/news/expanding-project-glasswing">扩展说明</a>则公布扩大伙伴范围。</p>
+<p>这些材料提供了理解 10 月消息的背景。它不是某一天突然取消所有限制，而是沿着伙伴验证、开放范围与治理要求持续调整。</p>
+<p>尤其值得留意的是“发现数量”与“修复效果”的差别。一处漏洞需要确认，重复问题需要去重，补丁可能还在审查。即使发现总数增长，也不能简单推导所有受影响系统已经安全。</p>
+<p>官方披露的进展有数据范围与统计限制。报道时保留这些限制，比只引用最大的数字更能帮助读者理解真实工作。</p>
+<h3 id="heading-2">为什么普通账号不能按同样方式使用？</h3>
+<p>网络安全能力具有双重用途。帮助维护者分析自己系统的工具，也可能被用在未经授权的目标上。不同访问范围因此需要不同验证和监控。</p>
+<p>这次扩展的核心，是向符合条件的使用者提供更合适的配置，而不是对所有人统一开放最少限制的设置。普通模型仍可以辅助自有代码审查、修补已知问题和整理安全告警，具体规则要以当前产品说明为准。</p>
+<p>对于博客站长，这些日常工作可能已经比追求最高权限更有用。错误日志说明、依赖更新与权限检查，都是可以从小范围开始的维护任务。</p>
+<p>但模型的建议仍要验证。它可能准确解释问题，却给出不适合你的系统版本的修改。安全维护不能靠回答语气决定是否上线。</p>
+<h2 id="heading-3">数据治理，是另一道实际门槛</h2>
+<p><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Enterprise Frontier Safeguards 说明</a>讨论了更强能力、误用监测与客户数据控制之间的安排。它仍有分阶段实施背景，不能把计划中的能力当成每个账号今天都有的功能。</p>
+<p>安全团队处理的材料可能包含日志、源码和内部结构。模型是否可用，只是一个条件；数据能否提交、谁能读取、如何留存，也会影响系统采用。</p>
+<p>我们的观察是，前沿 AI 的竞争已经延伸到这些交付细节。更高发现能力可以带来价值，但如果验证、数据管理或修补流程跟不上，结果可能停留在大量待处理报告。</p>
+<p>这也是为什么模型、工具和组织流程需要一起看。不能只比较“找到了几个问题”，而忽略这些问题最终有没有被正确处理。</p>
+<h2 id="heading-4">这次开放之后，真正值得跟踪的三件事</h2>
+<p>首先是合格防御者能否获得适合的访问，而不在合法工作中频繁遭遇误拦截。其次是发现的问题是否经过验证、能够稳定修补。最后是使用者在权限和数据规则下，能否形成持续维护的方式。</p>
+<p>这些问题不会仅凭一次发布公告得到答案。它们需要之后的使用反馈与可检查的进展。</p>
+<p>对普通读者而言，可以把 CVP 理解为 AI 安全能力进入专业服务时的一次分层调整。它与<a href="/posts/gemini-4-argon-access-2026">Gemini 4 的首批防御者开放</a>值得并列观察，但两者资格与治理安排不同。</p>
+<p>如果日常访问海外安全公告或开发资料时遇到连接问题，可参考本站的<a href="/posts/best">网络线路选择文章</a>。连接改善不会替代访问资格，更不会把拒绝执行某类任务变成网络故障。</p>
 </div>
 <div class="article-likes" data-pagefind-ignore>
 <button id="page-like" class="like-button" type="button" aria-pressed="false" aria-describedby="page-like-message" disabled>
@@ -159,13 +129,13 @@
 <span id="page-like-label">点赞</span><span id="page-like-count">—</span>
 </button><p id="page-like-message" role="status"></p>
 </div>
-
-<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><a href="https://techman.blog/posts/shadowrocket/">← 上一篇</a><a href="https://techman.blog/posts/claude-frontier-academy-ai-talent-2026/">下一篇 →</a></nav>
+<div class="article-tags" data-pagefind-ignore><a href="https://techman.blog/tags/claude/"># Claude</a><a href="https://techman.blog/tags/ai-agents/"># AI智能体</a><a href="https://techman.blog/tags/ai-security/"># AI安全</a></div>
+<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><a href="https://techman.blog/posts/problems/">← 上一篇</a><a href="https://techman.blog/posts/claude-frontier-academy-ai-talent-2026/">下一篇 →</a></nav>
 <section class="comments-section" data-pagefind-ignore><h2>评论</h2><div id="comments"></div></section>
 </article>
 
 <div class="article-rail">
-<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#heading">为什么这不只是一个企业功能更新？</a><a class="level-2" href="#heading-1">三个层级到底有什么区别？</a><a class="level-2" href="#heading-2">普通用户与小型网站维护者会受什么影响？</a><a class="level-2" href="#ai-">为什么“AI 拒绝回答”不等于网络不好？</a><a class="level-2" href="#heading-3">行业观察：能力开放与工程验证会一起发展</a><a class="level-2" href="#heading-4">站长日常维护可以先做哪些事？</a><a class="level-2" href="#heading-5">常见问题</a><a class="level-3" href="#claude-">Claude 普通账号的网络安全限制都取消了吗？</a><a class="level-3" href="#heading-6">个人研究者可以获得所有层级吗？</a><a class="level-3" href="#-gemini-4-">这和 Gemini 4 的发布有什么关系？</a></nav></aside>
+<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#heading">三层权限，回答的是“谁在做什么工作”</a><a class="level-2" href="#heading-1">这条新闻的前半段发生在春夏</a><a class="level-3" href="#heading-2">为什么普通账号不能按同样方式使用？</a><a class="level-2" href="#heading-3">数据治理，是另一道实际门槛</a><a class="level-2" href="#heading-4">这次开放之后，真正值得跟踪的三件事</a></nav></aside>
 </div>
 
 </main>
@@ -199,7 +169,7 @@
 </div>
 </dialog>
 
-<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/6d8c75e1-ebb2-474c-818a-44c980f9dced/","pageTitle":"Claude 扩大网络安全验证计划：三层权限说明了 AI 行业什么变化？","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-779c4c70-8e76-4b56-8ee3-5b99bbc44ef2","views":true,"viewsBase":0}</script>
+<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/6d8c75e1-ebb2-474c-818a-44c980f9dced/","pageTitle":"Claude 把网络安全能力分成三层开放：找到漏洞之后，还要解决什么？","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-779c4c70-8e76-4b56-8ee3-5b99bbc44ef2","views":true,"viewsBase":0}</script>
 
 </body>
 </html>
