@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-06T21:37:16Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,11 +22,11 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-06T21:34:28Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-06T21:37:16Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/chatgpt-pro-200-tibo-quota-devday-2026/</loc>
-    <lastmod>2026-10-06T21:34:27Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/clashmeta/</loc>
@@ -55,6 +55,10 @@
   <url>
     <loc>https://techman.blog/posts/clashverge/</loc>
     <lastmod>2026-10-06T20:34:22Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/claude-cowork-cloud-only-pro-max-october-2026/</loc>
+    <lastmod>2026-10-07T00:12:37Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/claude-cyber-verification-program-2026/</loc>
@@ -81,6 +85,10 @@
     <lastmod>2026-10-06T21:05:12Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/gemini-free-ai-plus-model-access-october-2026/</loc>
+    <lastmod>2026-10-07T00:12:39Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/gpt-5-5-retirement-october-2026/</loc>
     <lastmod>2026-10-06T21:05:12Z</lastmod>
   </url>
@@ -94,7 +102,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-06T21:34:28Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -142,7 +150,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/</loc>
-    <lastmod>2026-10-06T21:04:18Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
@@ -150,11 +158,15 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-06T21:04:18Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-security/</loc>
     <lastmod>2026-10-06T21:04:18Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/ai-subscriptions/</loc>
+    <lastmod>2026-10-07T00:12:39Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-talent/</loc>
@@ -165,8 +177,12 @@
     <lastmod>2026-10-06T21:34:28Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/tags/claude-cowork/</loc>
+    <lastmod>2026-10-07T00:12:39Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/tags/claude/</loc>
-    <lastmod>2026-10-06T21:04:18Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/codex/</loc>
@@ -182,7 +198,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/gemini/</loc>
-    <lastmod>2026-10-06T21:04:18Z</lastmod>
+    <lastmod>2026-10-07T00:13:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/mistral/</loc>
