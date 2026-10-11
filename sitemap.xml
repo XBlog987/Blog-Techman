@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,15 +22,19 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/page/3/</loc>
+    <lastmod>2026-10-11T00:09:48Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -73,6 +77,10 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/claude-false-police-tip-agent-test-boundaries-2026/</loc>
+    <lastmod>2026-10-11T00:09:48Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/claude-frontier-academy-ai-talent-2026/</loc>
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
@@ -113,16 +121,20 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/microsoft-decision-1-qwen-agent-scoring-2026/</loc>
+    <lastmod>2026-10-11T00:09:46Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/mistral-large-4-preview-2026/</loc>
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/openai-false-front-ai-influence-fake-bylines-2026/</loc>
-    <lastmod>2026-10-10T00:06:51Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -178,7 +190,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
@@ -186,11 +198,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-security/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-subscriptions/</loc>
@@ -210,7 +222,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/claude/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/codex/</loc>
@@ -258,7 +270,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/qwen/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/reflection/</loc>
