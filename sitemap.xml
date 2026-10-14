@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,19 +22,19 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -50,7 +50,11 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/anthropic-ai-self-replication-tv-box-evidence-2026/</loc>
-    <lastmod>2026-10-13T00:16:26Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/anthropic-scion-git-ai-coding-infrastructure-2026/</loc>
+    <lastmod>2026-10-14T00:15:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/best/</loc>
@@ -129,6 +133,10 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/meta-muse-wonder-full-memory-access-2026/</loc>
+    <lastmod>2026-10-14T00:15:27Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/microsoft-decision-1-qwen-agent-scoring-2026/</loc>
     <lastmod>2026-10-11T00:09:46Z</lastmod>
   </url>
@@ -142,7 +150,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -202,15 +210,15 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-security/</loc>
@@ -218,7 +226,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-subscriptions/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-talent/</loc>
@@ -234,7 +242,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/claude/</loc>
-    <lastmod>2026-10-12T00:11:29Z</lastmod>
+    <lastmod>2026-10-14T00:15:44Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/codex/</loc>
@@ -263,6 +271,10 @@
   <url>
     <loc>https://techman.blog/tags/local-ai/</loc>
     <lastmod>2026-10-13T00:16:33Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/meta-ai/</loc>
+    <lastmod>2026-10-14T00:15:29Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/mistral/</loc>
