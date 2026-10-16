@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,19 +22,19 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -121,6 +121,10 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/google-ai-search-links-website-traffic-october-2026/</loc>
+    <lastmod>2026-10-16T00:16:23Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/google-embeddinggemma-2-local-multimodal-search-2026/</loc>
     <lastmod>2026-10-10T00:06:48Z</lastmod>
   </url>
@@ -138,7 +142,11 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/grok-voice-3-release-latency-pricing-2026/</loc>
-    <lastmod>2026-10-15T04:42:46Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/meta-muse-spark-open-mac-memory-license-2026/</loc>
+    <lastmod>2026-10-16T00:16:26Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/meta-muse-wonder-full-memory-access-2026/</loc>
@@ -158,7 +166,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -226,7 +234,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/ai-search/</loc>
+    <lastmod>2026-10-16T00:16:26Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-security/</loc>
@@ -286,11 +298,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/local-ai/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/meta-ai/</loc>
-    <lastmod>2026-10-14T00:15:29Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/mistral/</loc>
@@ -302,7 +314,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/open-weight/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-10-16T00:16:31Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/openai/</loc>
