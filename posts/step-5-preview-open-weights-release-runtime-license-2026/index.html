@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="default">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？ · 科技狂人</title>
+<meta name="description" content="Step 5 Preview 权重已于 2026 年 10 月 15 日开放。梳理阶跃星辰从 API 上线到权重交付的时间线，解读 vLLM、SGLang 支持、百万上下文机制，以及 StepFun Model License 1.0 的关键条件。">
+<meta name="keywords" content="Step 5 Preview,阶跃星辰,开放权重,AI编程,StepFun Model License,AI智能体">
+<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/">
+<meta property="og:title" content="Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？">
+<meta property="og:description" content="Step 5 Preview 权重已于 2026 年 10 月 15 日开放。梳理阶跃星辰从 API 上线到权重交付的时间线，解读 vLLM、SGLang 支持、百万上下文机制，以及 StepFun Model License 1.0 的关键条件。">
+<meta property="og:url" content="https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="科技狂人">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png"><meta property="og:image:alt" content="科技狂人">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？">
+<meta name="twitter:description" content="Step 5 Preview 权重已于 2026 年 10 月 15 日开放。梳理阶跃星辰从 API 上线到权重交付的时间线，解读 vLLM、SGLang 支持、百万上下文机制，以及 StepFun Model License 1.0 的关键条件。">
+<meta name="twitter:image" content="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png">
+<meta name="author" content="狂人哥"><meta property="article:published_time" content="2026-10-17T08:10:30&#43;08:00"><meta property="article:modified_time" content="2026-10-17T08:10:41&#43;08:00"><meta property="article:tag" content="AI资讯"><meta property="article:tag" content="开放权重"><meta property="article:tag" content="AI编程"><meta property="article:tag" content="阶跃星辰">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/#article","@type":"BlogPosting","author":{"@type":"Person","name":"狂人哥"},"dateModified":"2026-10-17T08:10:41+08:00","datePublished":"2026-10-17T08:10:30+08:00","description":"Step 5 Preview 权重已于 2026 年 10 月 15 日开放。梳理阶跃星辰从 API 上线到权重交付的时间线，解读 vLLM、SGLang 支持、百万上下文机制，以及 StepFun Model License 1.0 的关键条件。","headline":"Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/","@type":"WebPage"},"url":"https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://techman.blog/","name":"科技狂人","position":1},{"@type":"ListItem","item":"https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/","name":"Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？","position":2}]}]}</script>
+
+<script>(()=>{let mode='system';try{const saved=localStorage.getItem('reader-theme');if(['system','light','dark'].includes(saved))mode=saved}catch{}const root=document.documentElement;root.dataset.colorMode=mode;root.classList.toggle('dark',mode==='dark'||(mode==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))})();</script>
+<link rel="stylesheet" href="https://techman.blog/assets/theme/style.css">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/advertisements.css">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/search.css"><script defer src="https://techman.blog/assets/theme/search.js"></script>
+
+<link rel="stylesheet" href="https://techman.blog/assets/theme/viewer.css">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/reader.css">
+<link rel="icon" href="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/artalk.css"><script defer src="https://techman.blog/assets/theme/artalk.js"></script>
+<script defer src="https://techman.blog/assets/theme/theme.js"></script>
+<script defer src="https://techman.blog/assets/theme/reader.js"></script>
+<script defer src="https://techman.blog/assets/theme/viewer.js"></script>
+<script defer src="https://techman.blog/assets/theme/image-viewer.js"></script>
+
+<script defer src="https://techman.blog/assets/theme/interactions.js"></script>
+
+<meta name="msvalidate.01" content="2E98BBEC61E7FACB09A1D966B3AA1A84" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWDB9J6RQS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HWDB9J6RQS');
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ugvntaboy2");
+</script>
+
+<script defer src="https://techman.blog/assets/xblog/google-analytics.js" data-xblog-google-analytics="G-HWDB9J6RQS" data-site-hosts="techman.blog,www.techman.blog"></script></head>
+
+<body class="reader-page article-page">
+
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="https://techman.blog/"><img src="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png" alt="" width="38" height="38"><span>科技狂人</span></a>
+<nav id="site-navigation" aria-label="站点导航"><a href="https://techman.blog/">首页</a><a href="https://techman.blog/categories/aps/">机场推荐</a><a href="https://techman.blog/categories/news/">最新动态</a><a href="https://techman.blog/categories/docs/">使用教程</a><a href="https://techman.blog/categories/si/">SI&amp;AI资讯</a><a href="https://techman.blog/categories/qs/">常见问题</a></nav>
+<a class="search-toggle" href="https://techman.blog/search/" data-open-dialog="search-dialog" aria-haspopup="dialog" aria-controls="search-dialog" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a>
+<button id="theme-mode" class="theme-toggle theme-cycle" type="button" aria-label="明暗模式：跟随系统，点击切换为明亮" title="跟随系统 · 点击切换为明亮">
+<svg class="theme-icon-system" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+<svg class="theme-icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"/></svg>
+<svg class="theme-icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+<span id="theme-mode-status" class="visually-hidden" role="status" aria-live="polite"></span>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="打开菜单" title="打开菜单">
+<svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
+</button>
+</div>
+</header>
+
+<div class="page-viewport article-viewport"><div class="page-scroll article-scroll">
+<main id="main" tabindex="-1" class="shell article-shell" data-has-toc="true">
+
+<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://techman.blog/">科技狂人</a></li><li><span aria-current="page">Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？</span></li></ol></nav>
+
+
+
+<article data-pagefind-body>
+<header class="article-header">
+<div class="eyebrow" data-pagefind-ignore>文章</div>
+<h1 data-pagefind-meta="title">Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？</h1>
+<div class="metadata" data-pagefind-ignore><span>狂人哥</span><time datetime="2026-10-17T08:10:30&#43;08:00">2026-10-17</time><span><span id="page-views">—</span> 次阅读</span></div>
+<div class="chips" data-pagefind-ignore><a href="https://techman.blog/categories/si/">SI&amp;AI资讯</a></div>
+</header>
+<div class="prose"><p>9 月听到 Step 5 Preview 发布的人，到了 10 月又看到一轮“开源”消息，很容易以为阶跃星辰发布了第二个新模型。两次消息对应的交付阶段其实不同：此前可以通过产品和 API 调用，10 月 15 日则把可下载权重交给了外部开发者。</p>
+<p>本文在 10 月 17 日核对了 <a href="https://huggingface.co/stepfun-ai/Step-5-Preview-BF16">阶跃星辰官方 BF16 模型仓库</a>、运行说明和许可证。对这次消息，更合适的关注点是：别人现在能独立做哪些事，还需要自己补上哪些部分。</p>
+<h2 id="heading">从可调用，到能自己运行</h2>
+<p>把最近几个时间点放在一起，变化就清楚了：</p>
+<ul>
+<li>**9 月 20 日：**Step 5 Preview 上线，面向软件工程、研究分析等需要多次执行工具的任务。<a href="https://www.stepfun.com/step-5-preview">原始发布页面</a> 说明产品和 API 已开放，并预告 10 月 15 日释放权重；页面目前仍保留这段历史预告。</li>
+<li>**10 月 12 日：**据 <a href="https://www.ithome.com/1/011/852.htm">IT之家当天报道</a>，模型进入腾讯 WorkBuddy，相关限免活动覆盖 10 月 12 日至 25 日。这属于应用入口扩展，与权重许可是两件事。</li>
+<li>**10 月 15 日：**BF16、FP8 检查点和运行材料落地，官方同时发布架构与训练说明。<a href="https://pandaily.com/stepfun-step-5-preview-open-weights-technical-blog-92-layer-sparse-gqa">Pandaily 当天的报道</a> 也记录了这个交付节点。</li>
+</ul>
+<p>使用 API 时，请求由服务提供方接收和运行。拿到权重后，团队可以在许可范围内研究模型、选择自己的基础设施，并考虑后续适配。新的自主空间来自能够获取和运行模型文件，不是模型在这一天突然获得了另一套已验证能力。</p>
+<p>Step 5 Preview 采用稀疏混合专家架构，官方标注约 6000 亿总参数，每个 token 激活约 270 亿参数，支持最高 100 万 token 的上下文。稀疏激活减少的是每次计算所动用的部分，完整权重仍需要存储和加载。</p>
+<h2 id="heading-1">交付物里，比“下载按钮”更重要的部分</h2>
+<p><a href="https://github.com/stepfun-ai/Step-5-Preview">官方部署说明</a> 给出了 vLLM、SGLang 和独立 Transformers 实现等路径。前两者可以提供兼容 OpenAI 接口形式的服务；这是接口格式兼容，并不表示模型由 OpenAI 提供，也不保证所有客户端功能自动兼容。</p>
+<p>运行环境的适配很关键。例如，模型输出中的推理内容、工具调用格式以及多 token 预测，需要框架相应支持。只把一个熟悉的模型名称替换进旧配置，未必就能得到完整能力。</p>
+<p><a href="https://www.sglang.io/blog/step-5-preview-day0-support">SGLang 与 Miles 的支持说明</a> 披露了具体运行结果：在四张 GB300、约 8K 输入、768 至 1,280 输出 token、指定 FP8 专家权重和推测解码配置下，单请求解码约为每秒 299 token。这是项目方给定环境下的测试，不能照搬成自己的服务器速度，更不能当成处理满百万上下文时的表现。</p>
+<p>官方也保留了尚未完成验证的部分：Transformers 的完整 BF16 文件分片转换到生成流程，尚未完成端到端验证。因此，“权重已经开放”和“所有运行路径都已充分验证”，应当分别判断。</p>
+<h2 id="heading-2">百万上下文背后，是怎样处理旧信息的？</h2>
+<p>长任务会不断累积代码、报错、工具返回和中间结论。如果每一步都反复读完所有历史，开销会迅速变大。阶跃 10 月 15 日的 <a href="https://platform.stepfun.ai/blog/inside-step-5-preview">技术文章</a> 解释了它如何处理这个问题。</p>
+<p>模型把主要关注近期内容的注意力层，与选择历史片段的稀疏注意力层交错安排。Sparse GQA 会先对历史内容按块建立索引，再选取相关部分参与计算。可以把它理解为：先查目录，找到需要的旧记录，再展开阅读，而不是每次从第一页翻到最后一页。</p>
+<p><img src="https://techman.blog/assets/media/52bf13c2-fe06-44d7-8b60-569bfd7e859d.png" alt="Step 5 Preview 的 Sparse GQA 原理图：索引器选择历史块，再读取对应的键值信息"></p>
+<p><em>图源：<a href="https://platform.stepfun.ai/blog/inside-step-5-preview">阶跃星辰技术文章图 2</a>，2026 年 10 月 17 日核查。该图展示历史块的选择与读取机制，不是业务任务成功率或速度对比图。</em></p>
+<p>同一篇技术文章还介绍了上下文压缩训练：任务较长时，把进展整理成可继续执行的状态。这里的目标是让有限窗口支撑更长的工作过程，并不是证明模型能够无限记忆、永不遗漏。</p>
+<p>这也与本站此前报道的 <a href="/posts/anthropic-scion-git-ai-coding-infrastructure-2026">Anthropic 为巨型代码库开发 Scion</a> 形成呼应：模型能力提升之后，任务记录、工具链和运行系统都在影响实际效率。</p>
+<h2 id="heading-3">这份模型许可证，要看哪几处？</h2>
+<p>Step 5 的模型权重采用 <strong>StepFun Model License 1.0</strong>。<a href="https://github.com/stepfun-ai/Step-5-Preview/blob/main/LICENSE">许可证原文</a> 允许在条件下使用、修改与分发，并设置了额外要求。它与标准 Apache 2.0 或 MIT 不能直接画等号。</p>
+<p>其中有三处对商业使用尤其相关：</p>
+<ol>
+<li>使用模型的商业产品或服务，如果某个自然月的活跃用户超过一亿，或月收入超过 2000 万美元，之后需要按条款显著展示指定署名。</li>
+<li>面向终端用户销售硬件的制造商或品牌方，把模型能力作为设备或配套服务的商业功能提供时，需要另行商用许可；远程运行也在该条款覆盖范围内。</li>
+<li>使用者或关联方经营对外提供模型推理或微调访问的 MaaS 业务，且合并各来源收入在任意连续十二个月超过 2000 万美元时，相关商业用途需要单独协议。原文还为不向第三方提供能力或输出的内部使用，以及认证渠道范围内的使用规定了例外。</li>
+</ol>
+<p>这些门槛的统计周期与适用对象不同，不能合并成一个“收入超过某数就全部收费”的结论。计划实际部署时，应按自己的产品形态核对原文。</p>
+<p>另外，<a href="https://github.com/stepfun-ai/Step-Code">Step Code 终端工具仓库</a> 标注的 MIT 许可属于该工具，不能据此推断底层模型也采用 MIT。官方 API 文档同样说明：搜索、代码执行等能力由接入模型的应用提供，模型本身不会自动获得本机或外部服务的访问权。</p>
+<p>对个人读者，这次最直接的变化，是后续有机会出现更多基于同一模型的服务和适配；对开发团队，则多了运行、评估和调整的选择。不过，自行部署仍意味着承担硬件、版本、服务维护与测试工作。是否划算，需要对实际任务算账，而不是只看榜单上的一次高分。</p>
+<p>截至本文核查，权重开放已经落地；官方评测中的历史日期、特定运行配置和仍待验证的流程，也都应与这条新消息一起保留。补充能力边界可参阅 <a href="https://platform.stepfun.ai/docs/en/guides/models/step-5-preview">Step 5 Preview 官方 API 文档</a>。</p>
+</div>
+<div class="article-likes" data-pagefind-ignore>
+<button id="page-like" class="like-button" type="button" aria-pressed="false" aria-describedby="page-like-message" disabled>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+<span id="page-like-label">点赞</span><span id="page-like-count">—</span>
+</button><p id="page-like-message" role="status"></p>
+</div>
+<div class="article-tags" data-pagefind-ignore><a href="https://techman.blog/tags/ai-news/"># AI资讯</a><a href="https://techman.blog/tags/open-weight/"># 开放权重</a><a href="https://techman.blog/tags/ai-coding/"># AI编程</a><a href="https://techman.blog/tags/stepfun/"># 阶跃星辰</a></div>
+<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><a href="https://techman.blog/posts/problems/">← 上一篇</a><a href="https://techman.blog/posts/mistral-timestral-time-series-forecasting-small-models-2026/">下一篇 →</a></nav>
+<section class="comments-section" data-pagefind-ignore><h2>评论</h2><div id="comments"></div></section>
+</article>
+
+<div class="article-rail">
+<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#heading">从可调用，到能自己运行</a><a class="level-2" href="#heading-1">交付物里，比“下载按钮”更重要的部分</a><a class="level-2" href="#heading-2">百万上下文背后，是怎样处理旧信息的？</a><a class="level-2" href="#heading-3">这份模型许可证，要看哪几处？</a></nav></aside>
+</div>
+
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部" hidden>
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14M12 20V8m-5 5 5-5 5 5"/></svg>
+</button>
+</div>
+
+<footer class="site-footer">
+<nav class="friend-links" aria-label="友情链接"><span class="friend-links-label">友情链接</span><a href="https://goflybit.com/#/register?code=a1WT8VR3" target="_blank" rel="noopener noreferrer">Flybit机场</a><a href="https://99ba.net/#/register?code=5Au1et3w" target="_blank" rel="noopener noreferrer">99吧机场</a></nav>
+<span>© Techman 2026</span>
+</footer>
+
+
+
+<dialog id="search-dialog" class="reader-dialog site-search" aria-labelledby="search-title" data-reader-dialog data-pagefind-ignore>
+<header class="reader-dialog-header"><h2 id="search-title">搜索文章</h2><button class="dialog-close" type="button" data-close-dialog aria-label="关闭搜索" title="关闭搜索">×</button></header>
+<div class="reader-dialog-body">
+
+<div id="site-search-ui" data-module="https://techman.blog/pagefind/pagefind-component-ui.js" data-stylesheet="https://techman.blog/pagefind/pagefind-component-ui.css" hidden>
+
+<pagefind-config bundle-path="https://techman.blog/pagefind/" base-url="https://techman.blog/" lang="zh-cn" no-worker></pagefind-config>
+<pagefind-input placeholder="搜索文章标题或正文"></pagefind-input>
+<pagefind-summary></pagefind-summary>
+<pagefind-results></pagefind-results>
+</div>
+<p id="search-status" class="search-status" role="status">正在加载搜索…</p>
+<button id="search-retry" class="button" type="button" hidden>重新加载</button>
+
+</div>
+</dialog>
+
+<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/8d1ffeb2-1561-4507-bf8b-7ab023f1e197/","pageTitle":"Step 5 Preview 开放权重：从 API 到可自行部署，阶跃这次交付了什么？","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-779c4c70-8e76-4b56-8ee3-5b99bbc44ef2","views":true,"viewsBase":0}</script>
+
+</body>
+</html>
