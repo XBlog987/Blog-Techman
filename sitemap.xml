@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,23 +22,23 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/3/</loc>
-    <lastmod>2026-10-17T00:10:41Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -109,6 +109,10 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/deepseek-v4-1-flash-1017-update-task-cost-2026/</loc>
+    <lastmod>2026-10-18T00:07:58Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/deepseek-v4-1-flash-update-2026/</loc>
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
@@ -174,7 +178,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -198,7 +202,11 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/step-5-preview-open-weights-release-runtime-license-2026/</loc>
-    <lastmod>2026-10-17T00:10:41Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/tencent-hy-memory-2-memhub-cross-tool-agent-memory-2026/</loc>
+    <lastmod>2026-10-18T00:08:01Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/tongbao/</loc>
@@ -238,19 +246,27 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/</loc>
-    <lastmod>2026-10-15T04:42:51Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/ai-agents/page/2/</loc>
+    <lastmod>2026-10-18T00:08:01Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/ai-memory/</loc>
+    <lastmod>2026-10-18T00:08:01Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/page/2/</loc>
-    <lastmod>2026-10-17T00:10:41Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-search/</loc>
@@ -290,7 +306,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/deepseek/</loc>
-    <lastmod>2026-10-09T00:15:01Z</lastmod>
+    <lastmod>2026-10-18T00:08:13Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/fakenews/</loc>
@@ -347,6 +363,10 @@
   <url>
     <loc>https://techman.blog/tags/stepfun/</loc>
     <lastmod>2026-10-17T00:10:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/tencent-hunyuan/</loc>
+    <lastmod>2026-10-18T00:08:01Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/tibo/</loc>
