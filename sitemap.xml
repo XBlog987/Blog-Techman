@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,27 +22,27 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/3/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/4/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/anthropic-junior-hiring-ai-agent-hours-workforce-2026/</loc>
-    <lastmod>2026-10-21T00:17:17Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/anthropic-scion-git-ai-coding-infrastructure-2026/</loc>
@@ -189,6 +189,10 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/mistral-nvidia-physics-ai-engineering-simulation-benchmarks-2026/</loc>
+    <lastmod>2026-10-22T00:11:55Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/mistral-timestral-time-series-forecasting-small-models-2026/</loc>
     <lastmod>2026-10-17T00:10:37Z</lastmod>
   </url>
@@ -201,12 +205,16 @@
     <lastmod>2026-10-21T00:17:27Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/openai-agents-weakened-safety-monitoring-internal-incidents-2026/</loc>
+    <lastmod>2026-10-22T00:11:51Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/openai-false-front-ai-influence-fake-bylines-2026/</loc>
     <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -274,11 +282,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/page/2/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
@@ -290,11 +298,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/page/2/</loc>
-    <lastmod>2026-10-21T00:17:27Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-search/</loc>
@@ -302,7 +310,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-security/</loc>
-    <lastmod>2026-10-20T00:10:43Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-subscriptions/</loc>
@@ -378,11 +386,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/mistral/</loc>
-    <lastmod>2026-10-17T00:10:48Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/nvidia/</loc>
-    <lastmod>2026-10-19T00:16:21Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/open-weight/</loc>
@@ -390,7 +398,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/openai/</loc>
-    <lastmod>2026-10-10T00:07:05Z</lastmod>
+    <lastmod>2026-10-22T00:12:06Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/physics-ai/</loc>
+    <lastmod>2026-10-22T00:11:55Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/qwen/</loc>
