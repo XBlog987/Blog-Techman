@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,27 +22,27 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/3/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/4/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -115,6 +115,10 @@
   <url>
     <loc>https://techman.blog/posts/claude-sonnet-5-5-everyday-guide/</loc>
     <lastmod>2026-10-09T00:15:01Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/deepseek-deepinfer-open-source-inference-engine-scope-2026/</loc>
+    <lastmod>2026-10-23T00:10:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/deepseek-search-fetch-api-pricing-november-2026/</loc>
@@ -190,7 +194,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/mistral-nvidia-physics-ai-engineering-simulation-benchmarks-2026/</loc>
-    <lastmod>2026-10-22T00:11:55Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/mistral-timestral-time-series-forecasting-small-models-2026/</loc>
@@ -213,8 +217,12 @@
     <lastmod>2026-10-11T00:10:00Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/openai-google-cloud-model-garden-private-preview-2026/</loc>
+    <lastmod>2026-10-23T00:10:54Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -293,16 +301,20 @@
     <lastmod>2026-10-20T00:10:43Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/tags/ai-infrastructure/</loc>
+    <lastmod>2026-10-23T00:10:54Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/tags/ai-memory/</loc>
     <lastmod>2026-10-18T00:08:01Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/page/2/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-search/</loc>
@@ -346,7 +358,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/deepseek/</loc>
-    <lastmod>2026-10-19T00:16:21Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/elevenlabs/</loc>
@@ -367,6 +379,10 @@
   <url>
     <loc>https://techman.blog/tags/generative-ui/</loc>
     <lastmod>2026-10-09T00:14:50Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/google-cloud/</loc>
+    <lastmod>2026-10-23T00:10:54Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/grok/</loc>
@@ -398,7 +414,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/openai/</loc>
-    <lastmod>2026-10-22T00:12:06Z</lastmod>
+    <lastmod>2026-10-23T00:11:07Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/physics-ai/</loc>
