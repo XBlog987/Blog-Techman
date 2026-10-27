@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,31 +22,35 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/3/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/4/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/4/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/page/5/</loc>
+    <lastmod>2026-10-27T00:15:45Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -63,6 +67,10 @@
   <url>
     <loc>https://techman.blog/posts/anthropic-ai-self-replication-tv-box-evidence-2026/</loc>
     <lastmod>2026-10-14T00:15:44Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/anthropic-ipo-s1-claude-revenue-compute-governance-2026/</loc>
+    <lastmod>2026-10-27T00:15:40Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/anthropic-junior-hiring-ai-agent-hours-workforce-2026/</loc>
@@ -225,12 +233,16 @@
     <lastmod>2026-10-17T00:10:37Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/nanbeige-4-3-33b-teacher-model-open-weights-agents-2026/</loc>
+    <lastmod>2026-10-27T00:15:45Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/nvidia-dory-4b-looped-model-compute-cache-2026/</loc>
     <lastmod>2026-10-20T00:10:43Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/nvidia-nemotron-3-5-bolt-e4b-local-conversation-2026/</loc>
-    <lastmod>2026-10-26T00:16:18Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/opaque-team-joins-anthropic-confidential-ai-2026/</loc>
@@ -250,7 +262,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -318,11 +330,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-agents/page/2/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
@@ -330,7 +342,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-infrastructure/</loc>
-    <lastmod>2026-10-25T00:07:28Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-memory/</loc>
@@ -365,6 +377,10 @@
     <lastmod>2026-10-21T00:17:27Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/tags/anthropic/</loc>
+    <lastmod>2026-10-27T00:15:45Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/tags/chatgpt/</loc>
     <lastmod>2026-10-10T00:07:05Z</lastmod>
   </url>
@@ -378,7 +394,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/claude/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/codex/</loc>
@@ -430,7 +446,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/local-ai/</loc>
-    <lastmod>2026-10-26T00:16:25Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/meta-ai/</loc>
@@ -445,12 +461,16 @@
     <lastmod>2026-10-22T00:12:06Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/tags/nanbeige/</loc>
+    <lastmod>2026-10-27T00:15:45Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/tags/nvidia/</loc>
     <lastmod>2026-10-26T00:16:25Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/open-weight/</loc>
-    <lastmod>2026-10-24T00:16:50Z</lastmod>
+    <lastmod>2026-10-27T00:15:52Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/openai/</loc>
