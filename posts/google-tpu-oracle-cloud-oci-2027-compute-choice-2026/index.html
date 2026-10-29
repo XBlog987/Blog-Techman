@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="default">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择 · 科技狂人</title>
+<meta name="description" content="Google TPU 将进入 Oracle Cloud Infrastructure，计划 2027 年起部署。本文结合 TPU 架构、TorchTPU、PyTorch 与 OCI 网络资料，解释合作意义、迁移成本和目前尚未公布的交付细节。">
+<meta name="keywords" content="Google TPU,Oracle OCI,TPU进入Oracle云,AI算力,TorchTPU,AI基础设施">
+<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://techman.blog/posts/google-tpu-oracle-cloud-oci-2027-compute-choice-2026/">
+<meta property="og:title" content="Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择">
+<meta property="og:description" content="Google TPU 将进入 Oracle Cloud Infrastructure，计划 2027 年起部署。本文结合 TPU 架构、TorchTPU、PyTorch 与 OCI 网络资料，解释合作意义、迁移成本和目前尚未公布的交付细节。">
+<meta property="og:url" content="https://techman.blog/posts/google-tpu-oracle-cloud-oci-2027-compute-choice-2026/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="科技狂人">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png"><meta property="og:image:alt" content="科技狂人">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择">
+<meta name="twitter:description" content="Google TPU 将进入 Oracle Cloud Infrastructure，计划 2027 年起部署。本文结合 TPU 架构、TorchTPU、PyTorch 与 OCI 网络资料，解释合作意义、迁移成本和目前尚未公布的交付细节。">
+<meta name="twitter:image" content="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png">
+<meta name="author" content="狂人哥"><meta property="article:published_time" content="2026-10-29T08:13:24&#43;08:00"><meta property="article:modified_time" content="2026-10-29T08:13:35&#43;08:00"><meta property="article:tag" content="AI基础设施"><meta property="article:tag" content="Google Cloud"><meta property="article:tag" content="TPU">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://techman.blog/posts/google-tpu-oracle-cloud-oci-2027-compute-choice-2026/#article","@type":"BlogPosting","author":{"@type":"Person","name":"狂人哥"},"dateModified":"2026-10-29T08:13:35+08:00","datePublished":"2026-10-29T08:13:24+08:00","description":"Google TPU 将进入 Oracle Cloud Infrastructure，计划 2027 年起部署。本文结合 TPU 架构、TorchTPU、PyTorch 与 OCI 网络资料，解释合作意义、迁移成本和目前尚未公布的交付细节。","headline":"Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://techman.blog/posts/google-tpu-oracle-cloud-oci-2027-compute-choice-2026/","@type":"WebPage"},"url":"https://techman.blog/posts/google-tpu-oracle-cloud-oci-2027-compute-choice-2026/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://techman.blog/","name":"科技狂人","position":1},{"@type":"ListItem","item":"https://techman.blog/posts/google-tpu-oracle-cloud-oci-2027-compute-choice-2026/","name":"Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择","position":2}]}]}</script>
+
+<script>(()=>{let mode='system';try{const saved=localStorage.getItem('reader-theme');if(['system','light','dark'].includes(saved))mode=saved}catch{}const root=document.documentElement;root.dataset.colorMode=mode;root.classList.toggle('dark',mode==='dark'||(mode==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))})();</script>
+<link rel="stylesheet" href="https://techman.blog/assets/theme/style.css">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/advertisements.css">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/search.css"><script defer src="https://techman.blog/assets/theme/search.js"></script>
+
+<link rel="stylesheet" href="https://techman.blog/assets/theme/viewer.css">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/reader.css">
+<link rel="icon" href="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png">
+<link rel="stylesheet" href="https://techman.blog/assets/theme/artalk.css"><script defer src="https://techman.blog/assets/theme/artalk.js"></script>
+<script defer src="https://techman.blog/assets/theme/theme.js"></script>
+<script defer src="https://techman.blog/assets/theme/reader.js"></script>
+<script defer src="https://techman.blog/assets/theme/viewer.js"></script>
+<script defer src="https://techman.blog/assets/theme/image-viewer.js"></script>
+
+<script defer src="https://techman.blog/assets/theme/interactions.js"></script>
+
+<meta name="msvalidate.01" content="2E98BBEC61E7FACB09A1D966B3AA1A84" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWDB9J6RQS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HWDB9J6RQS');
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ugvntaboy2");
+</script>
+
+<script defer src="https://techman.blog/assets/xblog/google-analytics.js" data-xblog-google-analytics="G-HWDB9J6RQS" data-site-hosts="techman.blog,www.techman.blog"></script></head>
+
+<body class="reader-page article-page">
+
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="https://techman.blog/"><img src="https://techman.blog/assets/media/a52482fe-a306-4665-a153-332b4be163cd.png" alt="" width="38" height="38"><span>科技狂人</span></a>
+<nav id="site-navigation" aria-label="站点导航"><a href="https://techman.blog/">首页</a><a href="https://techman.blog/categories/aps/">机场推荐</a><a href="https://techman.blog/categories/news/">最新动态</a><a href="https://techman.blog/categories/docs/">使用教程</a><a href="https://techman.blog/categories/si/">SI&amp;AI资讯</a><a href="https://techman.blog/categories/qs/">常见问题</a></nav>
+<a class="search-toggle" href="https://techman.blog/search/" data-open-dialog="search-dialog" aria-haspopup="dialog" aria-controls="search-dialog" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a>
+<button id="theme-mode" class="theme-toggle theme-cycle" type="button" aria-label="明暗模式：跟随系统，点击切换为明亮" title="跟随系统 · 点击切换为明亮">
+<svg class="theme-icon-system" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+<svg class="theme-icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"/></svg>
+<svg class="theme-icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+<span id="theme-mode-status" class="visually-hidden" role="status" aria-live="polite"></span>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="打开菜单" title="打开菜单">
+<svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
+</button>
+</div>
+</header>
+
+<div class="page-viewport article-viewport"><div class="page-scroll article-scroll">
+<main id="main" tabindex="-1" class="shell article-shell" data-has-toc="true">
+
+<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://techman.blog/">科技狂人</a></li><li><span aria-current="page">Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择</span></li></ol></nav>
+
+
+
+<article data-pagefind-body>
+<header class="article-header">
+<div class="eyebrow" data-pagefind-ignore>文章</div>
+<h1 data-pagefind-meta="title">Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择</h1>
+<div class="metadata" data-pagefind-ignore><span>狂人哥</span><time datetime="2026-10-29T08:13:24&#43;08:00">2026-10-29</time><span><span id="page-views">—</span> 次阅读</span></div>
+<div class="chips" data-pagefind-ignore><a href="https://techman.blog/categories/si/">SI&amp;AI资讯</a></div>
+</header>
+<div class="prose"><p>Google TPU 将进入 Oracle Cloud Infrastructure（OCI），最值得关注的变化，是客户未来可以在 Oracle 云里选择 Google 自研的 AI 加速器。10 月 27 日，双方公布合作，称 OCI 将成为 Google 之外首个提供 TPU 的超大规模云平台；部署计划从 <strong>2027 日历年</strong>开始。<a href="https://cloud.google.com/blog/products/infrastructure/bringing-google-tpus-to-oracle-cloud-infrastructure">联合署名公告</a>写的是未来供给，截至本文 10 月 29 日核查时，不能把它理解成今天已经开放购买。</p>
+<p>这条消息也不等于“Oracle 要把 GPU 全部换掉”。公告强调的是多种架构并存。真正有意思的问题是：当模型训练和推理越来越贵，云厂商怎样把另一套芯片、软件和数据中心组合，变成客户可以实际使用的选择？</p>
+<h2 id="tpu-">TPU 的价值，为什么不能只看一颗芯片</h2>
+<p>TPU 是 Google 为机器学习设计的专用加速器。对普通读者来说，可以把它理解成围绕一类计算任务设计的生产设备；设备本身很快，还需要原料及时送达、工序顺畅衔接，才能提高整条生产线的效率。这是帮助理解的比喻，并非对某家客户实测结果的描述。</p>
+<p>Google 在 <a href="https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive">4 月的第八代 TPU 架构说明</a>中，把 TPU 8t 和 8i 分别侧重于大规模训练，以及采样、推理服务等需求。前者重视规模化吞吐，后者针对生成答案时频繁发生的通信与等待作了不同取舍。因此，“训练模型”和“让模型同时回答很多用户”并不总适合照搬同一种系统设计。</p>
+<p><img src="https://techman.blog/assets/media/95e38324-58be-4284-9b22-48c056109222.png" alt="Google 官方 TPU 8i Boardfly 互联示意：芯片、托盘和组之间分层连接"></p>
+<p><em>图源：Google Cloud 上述架构文章的图 5，发布于 2026 年 4 月 22 日，核查于 10 月 29 日。它解释 TPU 8i 的互联背景，并非 OCI 机房实景，也不代表此次合作已公布全部交付配置。</em></p>
+<p>图里那些连线不是装饰。多个加速器协作时，算完一部分还要交换结果；如果总在等数据，再高的峰值算力也可能闲置。Google 和 Oracle 此次合作涉及的不只是芯片，还包括电力、液冷和数据中心网络。</p>
+<p>这还改变了应该追问的指标。训练任务要看集群有多少时间真正用于有效计算，而非等待或重启；面向用户的推理，则要看每个 token 的成本和响应延迟。一个系统跑批量任务很快，并不说明高峰时段的交互体验同样出色。</p>
+<p>比较方案时，需要先固定模型、输入输出长度、并发量和质量要求。否则，拿低精度下的峰值算力去对照另一套服务的最终账单，很容易把不同条件下的数字混在一起。这是本文对比较方法的判断，并非此次合作已经公布的客户测试。</p>
+<p>Oracle 同日公布的 <a href="https://www.oracle.com/news/announcement/ai-world-oracle-unveils-new-cloud-networking-innovations-for-ai-2026-10-27/">Acceleron 网络更新</a>也把重点放在数据搬运、分布式通信和故障路径切换。按其产品说明，多条网络路径可以让通信绕开故障。这里反映的行业方向是提高整套系统持续工作的能力；具体客户能少花多少钱，仍要看配置和实际任务，不能由厂商宣传中的单项提升直接换算。</p>
+<h2 id="heading">软件能迁移，和迁移后划算，是两道题</h2>
+<p>如果换芯片就得重写整个模型，新增硬件选项的吸引力会明显下降。合作前一周，Google 已在 10 月 20 日宣布 <a href="https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus/">TorchTPU 开放源码</a>，让开发者沿用熟悉的 PyTorch 接口，并连接常用的训练、推理和调度工具。</p>
+<p>这一步值得与硬件合作放在一起看：OCI 带来新的承载位置，软件生态则试图降低“把任务搬过去”的门槛。两者解决的是不同问题。</p>
+<p>不过，Google 所说的“少量代码改动”，不能自动推导成零迁移成本。<a href="https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/">PyTorch 官方大会回顾</a>给出了更细的边界：有些任务迁移可能只需切换设备，但要达到峰值性能，还可能需要调整张量形状、分片方式和具体算子。现有程序能启动，只是第一步；结果正确、速度稳定、维护成本可接受，才接近生产环境的要求。</p>
+<p>举个假设场景：一家公司已有 Oracle 数据库，想把内部文档检索和模型推理放到附近。它可能节省部分跨云搬运，但也可能增加适配、监控和运维工作。这个例子用于说明成本构成，不能当成已经验证的客户收益。最终要比较的，应是完成同样任务的总成本与延迟，而非单看芯片名字。</p>
+<h2 id="heading-1">数据在哪里，也会影响这笔账</h2>
+<p>围绕本届 Oracle AI World，Google 与 Oracle 还公布了 <a href="https://cloud.google.com/blog/products/databases/oracle-ai-databasegoogle-cloud-whats-new-at-oracle-ai-world">Oracle AI Database@Google Cloud 的集成进展</a>，涉及数据库连接、权限治理和 Gemini 工作流。这与 TPU 进入 OCI 的方向不同：一个让 Oracle 数据库靠近 Google 云的服务，另一个让 Google 加速器进入 Oracle 云，不能混写成同一项产品已经上线。</p>
+<p>两条消息共同说明，企业 AI 的选择往往围绕已有数据和业务系统展开。把模型放在哪里，既影响数据访问路径，也影响权限、采购与日常运维。算力选择越多，客户越有比较空间，但“更靠近数据”仍不等于可以省略授权或治理。</p>
+<p>对关注 AI 行业的读者，这比又一个峰值跑分更值得跟进。站内此前报道的 <a href="/posts/openai-google-cloud-model-garden-private-preview-2026">OpenAI 模型进入 Google Cloud 私有预览</a>，是模型分发渠道的变化；此次则触及底层计算供给。两者都在扩大选择，交付状态和适用条件却各不相同。</p>
+<p>接下来应看的，是 OCI 何时公布可用区域、具体配置、价格和服务条件。现阶段可以确认合作及 2027 年起步计划；“所有任务都更便宜”“已经替代 GPU”都超出了公告。真正改变客户选择的那一天，要等这些细节一起落地。</p>
+<p><em>本文依据双方合作公告，并补充核查 TPU 架构、TorchTPU、PyTorch、Acceleron 与数据库集成等 5 份原始资料。文中未进行硬件实测。</em></p>
+</div>
+<div class="article-likes" data-pagefind-ignore>
+<button id="page-like" class="like-button" type="button" aria-pressed="false" aria-describedby="page-like-message" disabled>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+<span id="page-like-label">点赞</span><span id="page-like-count">—</span>
+</button><p id="page-like-message" role="status"></p>
+</div>
+<div class="article-tags" data-pagefind-ignore><a href="https://techman.blog/tags/ai-infrastructure/"># AI基础设施</a><a href="https://techman.blog/tags/google-cloud/"># Google Cloud</a><a href="https://techman.blog/tags/tpu/"># TPU</a></div>
+<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><a href="https://techman.blog/posts/cloudflare-workers-ai-glm-5-3-kv-cache-data-exposure-2026/">← 上一篇</a><a href="https://techman.blog/posts/google-genie-4-world-model-native-audio-research-preview-2026/">下一篇 →</a></nav>
+<section class="comments-section" data-pagefind-ignore><h2>评论</h2><div id="comments"></div></section>
+</article>
+
+<div class="article-rail">
+<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#tpu-">TPU 的价值，为什么不能只看一颗芯片</a><a class="level-2" href="#heading">软件能迁移，和迁移后划算，是两道题</a><a class="level-2" href="#heading-1">数据在哪里，也会影响这笔账</a></nav></aside>
+</div>
+
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部" hidden>
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14M12 20V8m-5 5 5-5 5 5"/></svg>
+</button>
+</div>
+
+<footer class="site-footer">
+<nav class="friend-links" aria-label="友情链接"><span class="friend-links-label">友情链接</span><a href="https://goflybit.com/#/register?code=a1WT8VR3" target="_blank" rel="noopener noreferrer">Flybit机场</a><a href="https://99ba.net/#/register?code=5Au1et3w" target="_blank" rel="noopener noreferrer">99吧机场</a></nav>
+<span>© Techman 2026</span>
+</footer>
+
+
+
+<dialog id="search-dialog" class="reader-dialog site-search" aria-labelledby="search-title" data-reader-dialog data-pagefind-ignore>
+<header class="reader-dialog-header"><h2 id="search-title">搜索文章</h2><button class="dialog-close" type="button" data-close-dialog aria-label="关闭搜索" title="关闭搜索">×</button></header>
+<div class="reader-dialog-body">
+
+<div id="site-search-ui" data-module="https://techman.blog/pagefind/pagefind-component-ui.js" data-stylesheet="https://techman.blog/pagefind/pagefind-component-ui.css" hidden>
+
+<pagefind-config bundle-path="https://techman.blog/pagefind/" base-url="https://techman.blog/" lang="zh-cn" no-worker></pagefind-config>
+<pagefind-input placeholder="搜索文章标题或正文"></pagefind-input>
+<pagefind-summary></pagefind-summary>
+<pagefind-results></pagefind-results>
+</div>
+<p id="search-status" class="search-status" role="status">正在加载搜索…</p>
+<button id="search-retry" class="button" type="button" hidden>重新加载</button>
+
+</div>
+</dialog>
+
+<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/7845dd13-83dd-4895-9a50-721143f9c0c8/","pageTitle":"Google TPU 将进入 Oracle 云：2027 年起，AI 算力多一种选择","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-779c4c70-8e76-4b56-8ee3-5b99bbc44ef2","views":true,"viewsBase":0}</script>
+
+</body>
+</html>
