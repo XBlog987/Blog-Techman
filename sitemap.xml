@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techman.blog/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/aps/</loc>
@@ -22,39 +22,43 @@
   </url>
   <url>
     <loc>https://techman.blog/categories/si/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/2/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/3/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/4/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/categories/si/page/5/</loc>
-    <lastmod>2026-10-31T05:44:50Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/2/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/3/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/4/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/page/5/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/page/6/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/1761586687730/</loc>
@@ -87,6 +91,10 @@
   <url>
     <loc>https://techman.blog/posts/anthropic-scion-git-ai-coding-infrastructure-2026/</loc>
     <lastmod>2026-10-15T04:42:51Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/apple-intelligence-china-qwen-november-beta-december-ios-27-3-2026/</loc>
+    <lastmod>2026-11-01T00:16:17Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/best/</loc>
@@ -149,8 +157,16 @@
     <lastmod>2026-10-09T00:15:01Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/posts/claude-ultra-max-20x-five-hour-limit-verified-weekly-2026/</loc>
+    <lastmod>2026-11-01T00:16:19Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/posts/cloudflare-workers-ai-glm-5-3-kv-cache-data-exposure-2026/</loc>
     <lastmod>2026-10-30T00:13:12Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/posts/cursor-claude-code-extension-malicious-update-security-october-2026/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/deepseek-deepinfer-open-source-inference-engine-scope-2026/</loc>
@@ -282,7 +298,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/nvidia-hugging-face-acquisition-doj-inquiry-open-platform-2026/</loc>
-    <lastmod>2026-10-31T05:44:50Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/nvidia-nemotron-3-5-bolt-e4b-local-conversation-2026/</loc>
@@ -310,7 +326,7 @@
   </url>
   <url>
     <loc>https://techman.blog/posts/problems/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/posts/qwen-3-8-omni-agent-news/</loc>
@@ -386,7 +402,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-coding/</loc>
-    <lastmod>2026-10-31T00:11:16Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-for-science/</loc>
@@ -402,11 +418,15 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/</loc>
-    <lastmod>2026-10-25T00:07:28Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-news/page/2/</loc>
-    <lastmod>2026-10-25T00:07:28Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/ai-news/page/3/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-search/</loc>
@@ -414,11 +434,11 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-security/</loc>
-    <lastmod>2026-10-30T00:13:12Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-subscriptions/</loc>
-    <lastmod>2026-10-31T05:44:58Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/ai-talent/</loc>
@@ -433,6 +453,10 @@
     <lastmod>2026-10-31T05:44:58Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/tags/apple-intelligence/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/tags/chatgpt/</loc>
     <lastmod>2026-10-31T05:44:58Z</lastmod>
   </url>
@@ -445,8 +469,16 @@
     <lastmod>2026-10-26T00:16:18Z</lastmod>
   </url>
   <url>
+    <loc>https://techman.blog/tags/claude-ultra/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
+  </url>
+  <url>
     <loc>https://techman.blog/tags/claude/</loc>
-    <lastmod>2026-10-31T00:11:16Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/claude/page/2/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/cloudflare/</loc>
@@ -459,6 +491,10 @@
   <url>
     <loc>https://techman.blog/tags/confidential-computing/</loc>
     <lastmod>2026-10-20T00:10:32Z</lastmod>
+  </url>
+  <url>
+    <loc>https://techman.blog/tags/cursor/</loc>
+    <lastmod>2026-11-01T00:16:20Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/deepseek/</loc>
@@ -550,7 +586,7 @@
   </url>
   <url>
     <loc>https://techman.blog/tags/qwen/</loc>
-    <lastmod>2026-10-13T00:16:33Z</lastmod>
+    <lastmod>2026-11-01T00:16:32Z</lastmod>
   </url>
   <url>
     <loc>https://techman.blog/tags/reflection/</loc>
